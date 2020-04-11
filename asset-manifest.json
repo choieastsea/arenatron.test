@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/arenatron.test/static/css/main.a63faf17.chunk.css",
+    "main.js": "/arenatron.test/static/js/main.10d50041.chunk.js",
+    "main.js.map": "/arenatron.test/static/js/main.10d50041.chunk.js.map",
+    "runtime-main.js": "/arenatron.test/static/js/runtime-main.f1be0e9f.js",
+    "runtime-main.js.map": "/arenatron.test/static/js/runtime-main.f1be0e9f.js.map",
+    "static/css/2.89f067aa.chunk.css": "/arenatron.test/static/css/2.89f067aa.chunk.css",
+    "static/js/2.3674c807.chunk.js": "/arenatron.test/static/js/2.3674c807.chunk.js",
+    "static/js/2.3674c807.chunk.js.map": "/arenatron.test/static/js/2.3674c807.chunk.js.map",
+    "index.html": "/arenatron.test/index.html",
+    "precache-manifest.681eace337e23baf03112da25f7f1f75.js": "/arenatron.test/precache-manifest.681eace337e23baf03112da25f7f1f75.js",
+    "service-worker.js": "/arenatron.test/service-worker.js",
+    "static/css/2.89f067aa.chunk.css.map": "/arenatron.test/static/css/2.89f067aa.chunk.css.map",
+    "static/css/main.a63faf17.chunk.css.map": "/arenatron.test/static/css/main.a63faf17.chunk.css.map",
+    "static/js/2.3674c807.chunk.js.LICENSE.txt": "/arenatron.test/static/js/2.3674c807.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1be0e9f.js",
+    "static/css/2.89f067aa.chunk.css",
+    "static/js/2.3674c807.chunk.js",
+    "static/css/main.a63faf17.chunk.css",
+    "static/js/main.10d50041.chunk.js"
+  ]
+}
