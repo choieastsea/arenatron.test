@@ -1,46 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: rgb(204, 241, 236) !important;
-}
-#root{
-    max-width: 720px;
-    margin: 0 auto;
-    background-color: rgb(211, 243, 253);
+body {
+  background-color: #ccc !important;
 }
 a {
+  text-decoration: none !important;
+}
+#root {
+  max-width: 720px;
+  background-color: white;
+  padding: 0;
+}
+button.navbar-toggler {
+  border: none;
+}
+.bi {
+  width: 25px;
+  height: 25px;
+}
+.fixed {
+  position: fixed;
+  right: 20px;
+  top: 12px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.responsive+p{
+    float: left;
+}
+.img-wrap{
+    position: relative;
+}
+.img-text{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+}
+.offset-300 {
+  margin-left: 300px;
+}
+.reserve-button {
+  color: #fff;
+  background-color: #000;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
   text-decoration: none;
+  margin-bottom: 2em;
 }
-footer {
-  padding: 0.7em;
-  color: white;
-  background-color: black;
+
+/*Inquiry page*/
+.login {
+  width: 75% !important;
 }
-.jumbotron {
-  background-image: url(https://placehold.it/800X300);
-  background-repeat: no-repeat;
-  height: 300px;
-}
-.offset-300{
-    margin-left: 300px;
-}
-.reserve-button{
-    color: white;
-    background-color: black;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 2em;
-}
-.reserve-jumbo{
-    background-image: url(https://placehold.it/700X200);
-    background-repeat: no-repeat;
-    height: 200px;
-    margin-bottom: 1em;
-}
-.reserve-jumbo>h1{
-    text-align: center;
-    line-height: 5em;
+
+@media (min-width: 720px) {
+  .fixed {
+    position: relative;
+    transform: translateY(-1em);
+  }
+  /*Inquiry page*/
+  .login {
+    width: 50% !important;
+  }
 }
