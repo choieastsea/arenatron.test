@@ -1,7 +1,6 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import Jumbo from '../components/Jumbo';
 import SelectDetail from '../components/SelectDetail';
-import TimeTable from '../components/TimeTable';
 
 class Reservation extends React.Component {
     componentDidMount() {
@@ -20,11 +19,8 @@ class Reservation extends React.Component {
         const fac_name = location.pathname.split("/")[2];
         return (
             <div>
-                <Jumbotron>
-                    <h3 className="text-center">{fac_name}</h3>
-                </Jumbotron>
+                <Jumbo text={fac_name} bg_img_src=""></Jumbo>
                 <SelectDetail />
-                <Button>search</Button>
             </div>
         );
     }

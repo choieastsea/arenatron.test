@@ -1,20 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Jumbo from '../components/Jumbo';
 import { Link } from 'react-router-dom';
-import { Jumbotron, Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row, Button, Modal } from 'react-bootstrap';
 class Home extends React.Component {
     render() {
         return (
             <div>
+                <ModalMain />
                 <div />
                 <div>
-                    <Jumbotron>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                    </Jumbotron>
+                    <Jumbo />
                     <Container>
                         <Row className="justify-content-around">
                             {facilityList.map((facility, index) => {
@@ -81,3 +76,19 @@ const facilityList = [
         src: "https://placehold.it/300X250"
     }
 ];
+
+function ModalMain() {
+    const [show, setShow] = useState(true, false);
+    const handleClose = () => setShow(false);
+
+    return (
+        <>
+            <Modal show={show} onHide={handleClose} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>공지 사항</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa.</Modal.Body>
+            </Modal>
+        </>
+    );
+}

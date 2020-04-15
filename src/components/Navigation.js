@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 class Navigation extends React.Component {
@@ -17,7 +17,13 @@ class Navigation extends React.Component {
                 <Navbar.Brand className="mr-auto ml-2" href="/">대덕 스포츠 클럽</Navbar.Brand>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-3">
-                        <Nav.Link href="/reserve/송촌풋살장">시설물 예약</Nav.Link>
+                        <NavDropdown title="시설물 예약">
+                            <NavDropdown.Item href="/reserve/송촌풋살장">송촌풋살장</NavDropdown.Item>
+                            <NavDropdown.Item href="/reserve/송촌테니스장">송촌테니스장</NavDropdown.Item>
+                            <NavDropdown.Item href="/reserve/을미기축구장">을미기축구장</NavDropdown.Item>
+                            <NavDropdown.Item href="/reserve/을미기테니스장">을미기테니스장</NavDropdown.Item>
+                            <NavDropdown.Item href="/reserve/대청수상레포츠">대청수상레포츠</NavDropdown.Item>
+                        </NavDropdown>
                         <Nav.Link href="/inquiry">예약 조회</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

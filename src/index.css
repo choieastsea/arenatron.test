@@ -26,17 +26,17 @@ button.navbar-toggler {
   height: auto;
   vertical-align: middle;
 }
-.responsive+p{
-    float: left;
+.responsive + p {
+  float: left;
 }
-.img-wrap{
-    position: relative;
+.img-wrap {
+  position: relative;
 }
-.img-text{
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    text-align: center;
+.img-text {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  text-align: center;
 }
 .offset-300 {
   margin-left: 300px;
@@ -52,17 +52,63 @@ button.navbar-toggler {
 }
 
 /*Inquiry page*/
-.login {
-  width: 75% !important;
+.login,
+.inquiry {
+  width: 90% !important;
 }
+.login input,
+.inquiry input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+}
+.login input:focus,
+.inquiry input:focus {
+  border-bottom: 1px solid black;
+}
+/*input 옆의 조절 버튼 없애는방법 : https://stackoverflow.com/questions/56848369/how-to-validate-forms-controls-to-use-only-numeric-values-with-react-bootstrap*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+/*reservation page*/
+.form-row > .form-group > .form-check > input {
+  display: none;
+}
+.form-row > .form-group > .form-check > input:checked + label {
+  background-color: black;
+  color: white;
+}
+label{
+    display: inline-block;
+    width: inherit;
+}
+/* .form-group{
+    border: 1px solid cadetblue;
+    margin-bottom: 0 !important;
+} */
 
 @media (min-width: 720px) {
+  /*tablet 이상의 viewport*/
   .fixed {
     position: relative;
     transform: translateY(-1em);
   }
   /*Inquiry page*/
-  .login {
+  .login,
+  .inquiry {
     width: 50% !important;
   }
+}
+
+@media (max-width: 576px) {
+  /*mobile viewport*/
+  .dropdown-menu.show {
+    border: none;
+    background-color: inherit;
+  }
+  
 }
